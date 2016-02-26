@@ -1,4 +1,4 @@
-# CONTRIBUTING to $$ProjectName
+# CONTRIBUTING to repologist
 
 ## Code Style
 
@@ -9,7 +9,7 @@ For all parts, please check written code for similar purposes and please try to 
 The project follows Airbnb's Javascript style guides, so please read [React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 and [Javascript Syle Guide](https://github.com/airbnb/javascript)
 
-Also please ESLint our .eslintrc, either via your editor of choice or via [command line tool]()
+Also please ESLint with our .eslintrc, either via your editor of choice or via [command line tool]()
 
 ### Server and Checker:
 

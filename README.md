@@ -1,4 +1,4 @@
-# $$ProjectName
+# repologist
 
 **Disclaimer:** Not yet functional
 
@@ -57,7 +57,7 @@ See [CONTRIBUTING](./CONTRIBUTING.md)
 
 ## Production Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/harunurhan/$$ProjectName)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/harunurhan/repologist)
 
 ## Local installation (Development Environment)
 
@@ -71,9 +71,9 @@ See [CONTRIBUTING](./CONTRIBUTING.md)
 Clone repository:
 
 ```
-git clone https://github.com/harunurhan/$$ProjectName.git
+git clone https://github.com/harunurhan/repologist.git
 
-cd $$ProjectName
+cd repologist
 ```
 
 Install npm dependencies:

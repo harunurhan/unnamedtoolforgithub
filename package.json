@@ -1,0 +1,103 @@
+{
+  "name": "repologist",
+  "version": "0.0.1",
+  "description": "Tool for ranking and getting tips on how to improve your repo to meet the best practices, as well as contributor open source project matching platform",
+  "scripts": {
+    "gunicorn": "gunicorn $GUNICORN_PARAMS --chdir server entry:app",
+    "start": "webpack-dev-server",
+    "test": "NODE_ENV=test BABEL_JEST_STAGE=0 jest",
+    "dist": "NODE_ENV=production webpack -p",
+    "postinstall": "npm run dist",
+    "eslint": "./node_modules/.bin/eslint ./client/**; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harunurhan/repologist"
+  },
+  "engines": {
+    "node": "0.10",
+    "npm": "2.10"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "gitrank",
+    "flask",
+    "postgresql",
+    "material-ui",
+    "redux",
+    "checkup",
+    "rankrepo",
+    "githubrank"
+  ],
+  "author": "Harun Urhan",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "6.3.14",
+    "eslint-plugin-react": "3.16.1",
+    "flummox": "3.6.8",
+    "isomorphic-fetch": "2.2.1",
+    "lodash": "4.3.0",
+    "material-ui": "0.14.4",
+    "node-libs-browser": "*",
+    "promise": "7.1.1",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "react-router": "*",
+    "react-svg-loader": "0.0.6",
+    "react-tap-event-plugin": "0.2.2",
+    "redux": "*",
+    "redux-logger": "*",
+    "redux-promise": "*",
+    "redux-thunk": "*",
+    "superagent-promise": "1.1.0",
+    "webpack": "1.12.12"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "3.2.0",
+    "babel": "6.3.26",
+    "babel-core": "6.3.26",
+    "babel-eslint": "5.0.0-beta10",
+    "babel-jest": "6.0.1",
+    "babel-loader": "6.2.1",
+    "babel-plugin-react-transform": "2.0.0",
+    "babel-plugin-transform-runtime": "6.4.3",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-react": "6.3.13",
+    "babel-preset-stage-0": "6.3.13",
+    "babel-runtime": "6.3.19",
+    "clean-webpack-plugin": "0.1.6",
+    "coveralls": "2.11.6",
+    "eslint": "1.10.3",
+    "eslint-config-airbnb": "5.0.0",
+    "eslint-loader": "1.2.0",
+    "eslint-plugin-babel": "3.0.0",
+    "eslint-plugin-react": "3.16.0",
+    "export-files-webpack-plugin": "0.0.1",
+    "html-webpack-plugin": "2.7.1",
+    "jest": "0.1.40",
+    "jest-cli": "0.8.2",
+    "jsx-loader": "0.13.2",
+    "mkdirp": "0.5.1",
+    "react-transform-hmr": "1.0.1",
+    "string-replace-webpack-plugin": "0.0.3",
+    "webpack-dev-server": "1.14.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ],
+    "testFileExtensions": [
+      "test.js",
+      "test.jsx"
+    ],
+    "testDirectoryName": "tests"
+  }
+}

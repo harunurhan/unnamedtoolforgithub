@@ -1,0 +1,33 @@
+{
+  "name": "repologist",
+  "description": "repologist",
+  "keywords": [
+    "react",
+    "webpack",
+    "gitrank",
+    "flask",
+    "postgresql",
+    "material-ui",
+    "redux",
+    "checkup",
+    "rankrepo",
+    "githubrank"
+  ],
+  "website": "https://github.com/harunurhan/repologist",
+  "logo": "http://link-to-logo.png",
+  "addons": ["heroku-postgresql:hobby-dev"],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi",
+    "NODE_ENV": {
+      "description": "Set the `NODE_ENV` environment variable to `production` to disable debugging etc.",
+      "value": "production"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "By default heroku is not installing `devDependencies`, so let's do that.",
+      "value": "false"
+    }
+  },
+  "scripts": {
+    "postdeploy": "python server/initdb.py"
+  }
+}
