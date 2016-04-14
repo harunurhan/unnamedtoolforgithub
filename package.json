@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "repodoctor",
+=======
+  "name": "repologist",
+>>>>>>> d5a53951a92cb18e518772372753fddbc5f683b4
   "version": "0.0.1",
   "description": "Tool for ranking and getting tips on how to improve your repo to meet the best practices, as well as contributor open source project matching platform",
   "scripts": {
@@ -12,7 +16,11 @@
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "https://github.com/harunurhan/repodoctor"
+=======
+    "url": "https://github.com/harunurhan/repologist"
+>>>>>>> d5a53951a92cb18e518772372753fddbc5f683b4
   },
   "engines": {
     "node": "0.10",
@@ -52,8 +60,12 @@
     "redux-promise": "*",
     "redux-thunk": "*",
     "superagent-promise": "1.1.0",
+<<<<<<< HEAD
     "webpack": "1.12.12",
     "whatwg-fetch": "0.11.0"
+=======
+    "webpack": "1.12.12"
+>>>>>>> d5a53951a92cb18e518772372753fddbc5f683b4
   },
   "devDependencies": {
     "assets-webpack-plugin": "3.2.0",

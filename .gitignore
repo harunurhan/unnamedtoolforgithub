@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+<<<<<<< HEAD
 # C extensions
 *.so
 
@@ -8,6 +9,12 @@ __pycache__/
 .idea
 .pycharmrc
 
+=======
+.idea
+# C extensions
+*.so
+
+>>>>>>> d5a53951a92cb18e518772372753fddbc5f683b4
 # Distribution / packaging
 .Python
 env/

@@ -29,11 +29,17 @@ const childContextTypes = {
 class Form extends Component {
   constructor(props) {
     super(props);
+<<<<<<< HEAD
 
     this.validations = [];
     this.registerValidation = this.registerValidation.bind(this);
     this.isFormValid = this.isFormValid.bind(this);
     this.submit = this.submit.bind(this);
+=======
+    this.validations = [];
+    this.registerValidation = this.registerValidation.bind(this);
+    this.isFormValid = this.isFormValid.bind(this);
+>>>>>>> d5a53951a92cb18e518772372753fddbc5f683b4
   }
 
   getChildContext() {

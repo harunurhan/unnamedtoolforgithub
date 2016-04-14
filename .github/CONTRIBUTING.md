@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # CONTRIBUTING to repodoctor
+=======
+# CONTRIBUTING to repologist
+>>>>>>> d5a53951a92cb18e518772372753fddbc5f683b4
 
 ## Code Style
 

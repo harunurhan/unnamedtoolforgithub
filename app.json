@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "repodoctor",
   "description": "repodoctor",
+=======
+  "name": "repologist",
+  "description": "repologist",
+>>>>>>> d5a53951a92cb18e518772372753fddbc5f683b4
   "keywords": [
     "react",
     "webpack",
@@ -13,7 +18,11 @@
     "rankrepo",
     "githubrank"
   ],
+<<<<<<< HEAD
   "website": "https://github.com/harunurhan/repodoctor",
+=======
+  "website": "https://github.com/harunurhan/repologist",
+>>>>>>> d5a53951a92cb18e518772372753fddbc5f683b4
   "logo": "http://link-to-logo.png",
   "addons": ["heroku-postgresql:hobby-dev"],
   "env": {
