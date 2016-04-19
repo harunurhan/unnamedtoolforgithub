@@ -4,7 +4,7 @@ from .criteria import *
 class Checker:
     # criteria which are checked
     # TODO: search for an injection method which will read classes in criteria.py and inject here to be checked!
-    criteria = [HaveReadmeCriterion(), HaveContributingCriterion()]
+    criteria = [HaveReadmeCriteria(), HaveContributingCriteria(), HaveLicenseCriteria(), HaveTravisCriteria(), HaveGitIgnoreCriteria(), HaveCocCriteria()]
 
     def __init__(self, owner, repo):
         self.github = RepoScanner(owner, repo)
