@@ -1,4 +1,4 @@
-# repologist
+# repodoctor
 
 **Disclaimer:** Not yet functional
 
@@ -6,6 +6,23 @@ Web app for checking if your repository is meeting the standards of the open sou
 If not, it gives you suggestions.
 In addition it is platform to advertise your open source projects to contributors by possibly using result of your checkup
 and find a cool project to contribute, if you are a contributor.
+This project started out as a little hack during the Mozilla Science Lab WOW 2016. Use this webapp to scan your repository and find out how contributor friendly it is.
+List of checks
+
+    Existence of README.md
+    Existence of LICENSE
+    Existence of CONTRIBUTING.md
+    Existence of .travis.yml
+    Existence of .gitignore
+    Existence of test cases
+    Code of Conduct
+    Length of README.md
+    Travis CI build status
+    GitHub milestones
+
+The application works with the repository url. The Python scripts runs above checks to rate your project on the basis of collaborative friendliness of the project. We also have an API which we plan to use for creating GitHub badges with Shields.
+
+Please see CONTRIBUTING.md if you are interested in getting involved.
 
 ## How does it work?
 
@@ -57,7 +74,7 @@ See [CONTRIBUTING](./CONTRIBUTING.md)
 
 ## Production Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/harunurhan/repologist)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/harunurhan/repodoctor)
 
 ## Local installation (Development Environment)
 
@@ -71,9 +88,9 @@ See [CONTRIBUTING](./CONTRIBUTING.md)
 Clone repository:
 
 ```
-git clone https://github.com/harunurhan/repologist.git
+git clone https://github.com/harunurhan/repodoctor.git
 
-cd repologist
+cd repodoctor
 ```
 
 Install npm dependencies:
@@ -85,11 +102,15 @@ npm install
 Setup python environment and install dependencies:
 
 ```
+cd server 
+
 virtualenv venv
 
 source venv/bin/activate     # or any equivalent
 
 pip install -r requirements.txt
+
+cd ..
 ```
 
 Copy `.env.example` config file to `.env`:

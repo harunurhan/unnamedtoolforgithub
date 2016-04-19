@@ -15,7 +15,7 @@ function checkupSucces(checkup) {
   };
 }
 
-export function checkupRequest(data) {
+export function onSubmit(data) {
   return dispatch => {
     dispatch({
       type: actionTypes.REQUEST_CHECKUP_RESULT,
@@ -24,10 +24,12 @@ export function checkupRequest(data) {
     post('/api/checkup', data)
     .then(res => {
       if (res.status >= 200 && res.status < 300) {
-        dispatch(checkupSucces(res.body.checkup));
-      } else {
-        throw new Error(res.statusText);
+        return res.json();
       }
+      throw new Error(res.statusText);
+    })
+    .then(json => {
+      dispatch(checkupSucces(json));
     })
     .catch(err => {
       dispatch(checkupError(err.message));

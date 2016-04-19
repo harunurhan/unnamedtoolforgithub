@@ -1,6 +1,6 @@
 {
-  "name": "repologist",
-  "description": "repologist",
+  "name": "repodoctor",
+  "description": "repodoctor",
   "keywords": [
     "react",
     "webpack",
@@ -13,7 +13,7 @@
     "rankrepo",
     "githubrank"
   ],
-  "website": "https://github.com/harunurhan/repologist",
+  "website": "https://github.com/harunurhan/repodoctor",
   "logo": "http://link-to-logo.png",
   "addons": ["heroku-postgresql:hobby-dev"],
   "env": {

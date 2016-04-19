@@ -63,7 +63,6 @@ class TextInput extends Component {
 
   updateValue(value) {
     this.context.update(this.props.name, value);
-
     if (this.state.errors.length) {
       setTimeout(() => this.isValid(true), 0);
     }

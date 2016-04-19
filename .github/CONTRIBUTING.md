@@ -1,4 +1,4 @@
-# CONTRIBUTING to repologist
+# CONTRIBUTING to repodoctor
 
 ## Code Style
 

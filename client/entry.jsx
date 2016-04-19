@@ -2,7 +2,7 @@ import 'babel-polyfill';
 
 import React from 'react';
 import { render } from 'react-dom';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 import promise from 'redux-promise';
@@ -14,11 +14,11 @@ import Home from './containers/Home';
 injectTapEventPlugin();
 
 // Redux Store (Instance)
-const store = applyMiddleware(
+const store = compose(applyMiddleware(
   thunk,
   promise,
   createLogger()
-)(createStore)(reducers);
+))(createStore)(reducers);
 
 render(
   <Home store={store} />,

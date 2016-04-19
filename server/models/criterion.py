@@ -3,8 +3,9 @@ from datetime import datetime
 
 from app import db
 
-class Criteria(db.Model):
-    __tablename__ = 'criteria'
+
+class Criterion(db.Model):
+    __tablename__ = 'criterion'
 
     id = db.Column(db.Integer, primary_key=True)
     created = db.Column(db.DateTime, default=datetime.utcnow)
